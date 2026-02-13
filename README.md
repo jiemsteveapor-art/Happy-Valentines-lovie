@@ -98,8 +98,25 @@ width:120px;
 height:120px;
 object-fit:cover;
 border-radius:15px;
-animation:pop 2s ease forwards;
 opacity:0;
+transform:scale(0.5);
+animation:fadeIn 1s forwards;
+}
+
+/* Fade One by One */
+.gallery img:nth-child(1){animation-delay:0s;}
+.gallery img:nth-child(2){animation-delay:1s;}
+.gallery img:nth-child(3){animation-delay:2s;}
+.gallery img:nth-child(4){animation-delay:3s;}
+.gallery img:nth-child(5){animation-delay:4s;}
+
+@keyframes fadeIn{
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+  
 }
 @keyframes pop{
 to{
@@ -179,4 +196,3 @@ setTimeout(typeWriter,speed);
 
 </body>
 </html>
-# Happy-Valentines-lovie
